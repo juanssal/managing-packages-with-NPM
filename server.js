@@ -55,10 +55,13 @@ if (!process.env.DISABLE_XORIGIN) {
 //   }
 // })
 
+app.use("/public", express.static(__dirname + "/public"));
+
 
 app.get("/", function(req, res) {
   res.sendFile(__dirname + "/views/index.html");
 });
+
 
 
 var port = process.env.PORT || 3000;
