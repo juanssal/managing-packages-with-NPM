@@ -12,14 +12,6 @@
 		"start": "node server.js"
 	},
 	"engines": {
-<<<<<<< HEAD
-		"node": "6.12.0"
-=======
-		"node": "10.15.3"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://idontknow/todo.git"
->>>>>>> f24ec97358ed5cf8f9dd2fcf0dab47d83f257943
+		"node": "^6.12.0"
 	}
 }
