@@ -9,6 +9,7 @@ var bGround = require('fcc-express-bground');
 
 
 /** 1) Meet the node console. */
+console.log("Hello World");
 bGround.log("Hello World");
 
 /** 2) A first working Express Server */
