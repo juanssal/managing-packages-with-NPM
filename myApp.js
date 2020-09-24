@@ -15,7 +15,7 @@ console.log("Hello World");
 
 
 /** 3) Serve an HTML file */
-app.get("/", function(req, res) {
+app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/index.html");
 });
 
@@ -27,7 +27,7 @@ app.use("/public", express.static(__dirname + "/public"));
 
 /** 5) serve JSON on a specific route */
 
-app.get("/json",function(req, res) {
+app.get("/json", (req, res) => {
   res.json(
     { "message": "Hello json" }
   );
