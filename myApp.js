@@ -62,10 +62,11 @@ function getTheCurrentTimeString() {
   return new Date().toString();
 };
 
-app.get("/now", function(req, res, next) {
+
+app.get("/now", (req, res, next) => {
     req.time = getTheCurrentTimeString();
     next();
-}, function(req, res) {
+}, (req, res) => {
     res.json({ time: req.time });
 });
 
@@ -73,6 +74,11 @@ app.get("/now", function(req, res, next) {
 
 
 /** 9)  Get input from client - Route parameters */
+
+
+app.get("/:word/echo", (req, res) => {
+  res.json({ echo: req.params.word });
+});
 
 
 /** 10) Get input from client - Query parameters */
